@@ -164,6 +164,7 @@ body {
     .main-content{
         height: max-content;
     }
+
 }
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -200,11 +201,12 @@ body {
         width: fit-content;
         height: max-content;
     }
+
 }
 
-@media screen and (max-width: 360px) {
+    @media screen and (max-width: 360px) {
         a {
-            font-size: 4vw;
+           font-size: 4vw;
         }
 
         p {
@@ -223,3 +225,5 @@ body {
             padding: 0 16px;
         }
     }
+
+  
