@@ -165,7 +165,6 @@ body {
         height: max-content;
     }
 }
-
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
 
@@ -201,8 +200,7 @@ body {
         height: max-content;
     }
 }
-
-@media screen and (max-width: 360px) {
+    @media screen and (max-width: 360px) {
         a {
             font-size: 4vw;
         }
