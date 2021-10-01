@@ -66,6 +66,42 @@ position: relative;
     margin-top: 10px;
 }
 
+.acknowledgement label {
+    position: relative;
+    line-height: 2px;
+}
+
+.acknowledgement label::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: rgba(240, 248, 255, .5);  
+    border: 1px solid black;  
+    position: absolute;
+    left: 226px;
+}
+
+.acknowledgement label::after{
+    content: "";
+    height: 6px;
+    width: 14px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    position: absolute;
+    left: 230px;
+    top: 0px;
+    transform: rotate(-58deg);
+}
+/* rule only works if input is above label element in HTML. Ask why it doesn't work even if css styling is switched */
+
+.acknowledgement input + label::after{
+    content: none;
+}
+
+.acknowledgement input:checked + label::after{
+    content: '';
+} 
+
 @media screen and (max-width: 980px) {
 
     .main-content{
