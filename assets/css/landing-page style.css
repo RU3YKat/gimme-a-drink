@@ -1,6 +1,29 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 html {
     height: 100%;
+}
+h2 {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+p {
+    text-align: center;
+
+}
+div{
+    width: 700px
+}
+
+button{
+    margin: 10px 248px;
+}
+
+label{
+    color: red
 }
 
 body {
@@ -8,5 +31,23 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
-    height: auto;
+    height: 100%;
+}
+
+.btn-large{
+    background-color: rgb(168, 64, 15);
+}
+
+.btn-large:hover{
+    background-color:  rgb(168, 64, 15);
+}
+
+.main-content {
+    background-color:rgba(240, 248, 255, .5);
+    width: 700px;
+    border-radius: 15px;
+    margin-top: 320px;
+}
+.agreement {
+    margin-top: 10px;
 }
