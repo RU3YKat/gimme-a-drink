@@ -3,6 +3,7 @@
     padding: 0;
     border: 0;
 }
+
 html {
     height: 100%;
 }
@@ -14,22 +15,23 @@ a {
 }
 
 h2 {
-    margin: 0px 0 10px 0;
-    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 5vw;
     text-align: center;
     font-style: italic;
     font-family:'Times New Roman', Times, serif;
 }
+
 p {
     text-align: center;
     font-family:'Times New Roman', Times, serif;
 }
-div{
-    width: 700px
-}
 
-button{
-    margin: 10px 248px;
+div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 label{
@@ -44,10 +46,8 @@ background-attachment: fixed;
 background-size: cover;
 height: 100%;
 position: relative;
-}
-
-.btn-large{
-    background-color: rgb(168, 64, 15);
+display: flex;
+flex-wrap: wrap;
 }
 
 .btn-large:hover{
@@ -55,16 +55,36 @@ position: relative;
 }
 
 .main-content {
-    background-color:rgba(240, 248, 255, .5);
-    width: 700px;
+    background-color: rgba(240, 248, 255, .5);
     border-radius: 15px;
-    margin-left: 50px;
-    position: relative;
-    top: 300px;
+    position: fixed;
+    margin: 0 10px;
+    top: 30%;
+    bottom: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.section-title{
+    flex-shrink: 1;
+
+}
+
+.section-description {
+    flex-shrink: 2;
+}
+
+.section-button {
+    margin-top: 10px;
+
+}
+
 .agreement {
     margin-top: 10px;
 }
+
 
 .acknowledgement label {
     position: relative;
@@ -102,31 +122,35 @@ position: relative;
     content: '';
 } 
 
-@media screen and (max-width: 980px) {
+.btn-large{
+    background-color: rgb(168, 64, 15);
+    height:30px;
+    line-height: normal;
+    border-radius: 9px;
+}
 
-    .main-content{
-        top: 600px;
-        margin: 0 auto;
+@media screen and (max-width: 720px) {
+    h2{
+    font-size: 10vw;
     }
 }
 
-@media screen and (max-width: 768px) {
-
-    .main-content{
-        top: 600px;
-        margin: 0 auto;
-    }
-}
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
+ @media screen and (max-width: 575px) {
+
+    p {
+        font-size: small;
+    }
+    span {
+        font-size: small;
+    }
+    
 
     .main-content{
-        top: 600px;
-        margin: 0 auto;
+        height: 300px;
     }
 
-}
 
 
 
