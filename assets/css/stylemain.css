@@ -1,5 +1,55 @@
-.parallax img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+
+.hero{
+    background-image: url(../images/martini.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10%;
+    height: 80vh;
+    margin: 0;
+}
+
+.quote{
+    background-color: rgba(240, 248, 255, .5);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    width: 40%;
+    height: 40%;
+    padding: 30px;
+    margin: 0;
+}
+
+#music{
+    text-align: center;
+    
+}
+
+#music h2{
+    margin: 0;
+}
+
+.container{
+    margin-bottom: 0;
+    height:40vh
+}
+
+.recipes{
+    background-image: url(../images/bartender.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+    margin: 0;
 }
