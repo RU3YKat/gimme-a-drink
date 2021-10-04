@@ -4,14 +4,13 @@ var tag = document.createElement('script');
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
+      // creates an <iframe> (and YouTube player) after the API code downloads
+      // by default, <iframe> displays as inline-block
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
           height: '195',
           width: '320',
-          videoId: 'M7lc1UVf-VE',
+          videoId: 'h7BTVFOAwkQ',
           playerVars: {
             'playsinline': 1
           },
@@ -22,21 +21,27 @@ var tag = document.createElement('script');
         });
       }
 
-      // 4. The API will call this function when the video player is ready.
+      // API will call this function when the video player is ready
       function onPlayerReady(event) {
         event.target.playVideo();
+        // grab select from html then add change.eventlistener
+        // when changes, grab video code, call player.loadVideoById()
+        let dropDown = document.querySelector("select")
+            dropDown.addEventListener("change", changedVideo) 
       }
 
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
+      // the API calls this function when the player's state changes
+      //    the function indicates that when playing a video (state=1),
       var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
+          setTimeout(stopVideo, 100000);
           done = true;
         }
       }
       function stopVideo() {
         player.stopVideo();
+      }
+      function changedVideo(event) {
+          player.loadVideoById(event.target.value)
       }
