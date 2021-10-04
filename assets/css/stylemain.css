@@ -14,8 +14,8 @@
 }
 
 .quote{
-    background-color: rgba(240, 248, 255, .5);
-    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,13 +25,14 @@
     font-style: italic;
     font-family:'Times New Roman', Times, serif;
     width: 40%;
-    height: 40%;
     padding: 30px;
     margin: 0;
 }
 
 #music{
     text-align: center;
+    padding: 30px;
+
     
 }
 
@@ -41,7 +42,11 @@
 
 .container{
     margin-bottom: 0;
-    height:40vh
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    padding-bottom: 20px;
 }
 
 .recipes{
@@ -52,4 +57,14 @@
     background-size: cover;
     height: 80vh;
     margin: 0;
+}
+
+.option {
+    background-color: #d2691e80;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#player {
+    background-color: #d2691e80;
+    justify-content: center;
 }
