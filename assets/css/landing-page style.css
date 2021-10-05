@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 36px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}
+
+p {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Overrides Materialize */
+label{
+    color: red;
+    font-size: 15px;
+}
+
+body {
+    background-image: url("../images/landing-page.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content {
+    position: fixed;
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    width: fit-content;
+}
+
+.intro-form {
+    background-color: rgba(240, 248, 255, .5);
+    border-radius: 15px;
+    width: fit-content;
+    margin: 0 30px;
+}
+
+.intro-form h2{
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.intro-form p {
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.intro-form label {
+    position: relative;
+    line-height: 2px;
+}
+
+.intro-form label::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: rgba(240, 248, 255, .5);
+    border: 1px solid black;
+    position: absolute;
+    right: -25px;
+    top: 0px;
+}
+
+.intro-form label::after{
+    content: "";
+    height: 6px;
+    width: 14px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    position: absolute;
+    right: -22px;
+    top: 7px;
+    transform: rotate(-58deg);
+}
+
+/* rule only works if input is above label element in HTML. Ask why it doesn't work even if css styling is switched */
+
+.intro-form input + label::after{
+    content: none;
+}
+
+.intro-form input:checked + label::after{
+    content: '';
+} 
+
+.button-holder{
+    text-align: center;
+}
+
+.intro-form button {
+    margin-top: 10px;
+    margin: 20px auto;
+}
+
+/*Overrides materialize */
+
+.btn-large{
+    background-color: rgb(168, 64, 15);
+    height: 30px;
+    width: fit-content;
+    line-height: normal;
+    border-radius: 9px;
+}
+
+/*Overrides materialize */
+.btn-large:hover{
+    background-color:  rgb(168, 64, 15);
+}
+
+@media screen and (max-width: 790px) {
+    h2{
+    font-size: 8vw;
+    }
+
+    .section-title {
+        padding: 10px 10px 0 10px;
+    }
+
+    .agreement, .section-description {
+        padding: 0 10px
+    }
+
+    .section-button {
+        padding-bottom: 10px
+    }
+
+    .main-content{
+        height: max-content;
+    }
+}
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    a {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 15px;
+    }
+    span {
+        font-size: 11px;
+    }
+
+    label{
+        font-size: 3vw;
+    }
+    
+    .section-title {
+        padding: 10px 10px 0 10px;
+    }
+
+    .agreement, .section-description {
+        padding: 0 10px
+    }
+
+    .section-button {
+        padding-bottom: 10px
+    }
+
+    .main-content{
+        width: fit-content;
+        height: max-content;
+    }
+}
+    @media screen and (max-width: 360px) {
+        a {
+            font-size: 4vw;
+        }
+
+        p {
+            font-size: 4.5vw;
+        }
+        span {
+            font-size: 4vw;
+        }
+
+        label{
+            font-size: 4vw;
+        }
+
+        .btn-large {
+            height: 10vw;
+            padding: 0 16px;
+        }
+    }
