@@ -26,7 +26,7 @@ var tag = document.createElement('script');
         event.target.playVideo();
         // grab select from html then add change.eventlistener
         // when changes, grab video code, call player.loadVideoById()
-        let dropDown = document.querySelector("select")
+        let dropDown = document.querySelector(".options")
             dropDown.addEventListener("change", changedVideo) 
       }
 
