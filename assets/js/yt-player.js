@@ -26,8 +26,12 @@ var tag = document.createElement('script');
         event.target.playVideo();
         // grab select from html then add change.eventlistener
         // when changes, grab video code, call player.loadVideoById()
-        let dropDown = document.querySelector("select")
-            dropDown.addEventListener("change", changedVideo) 
+        let selectButtons = document.querySelector("#btn-group")
+          selectButtons.addEventListener("click", changedVideo)
+            return;
+        
+        // let dropDown = document.querySelector("select")
+        //     dropDown.addEventListener("change", changedVideo) 
       }
 
       // the API calls this function when the player's state changes
