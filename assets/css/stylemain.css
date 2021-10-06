@@ -31,13 +31,37 @@
 
 #music{
     text-align: center;
-    padding: 30px;
-
-    
 }
 
 #music h2{
     margin: 0;
+}
+
+.audio-player{
+    border-radius: 50px;
+    padding-top: 30px;
+	background: url(../images/music-player-background.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+}
+
+#buttons{
+	width:90%;
+	display: block;
+    margin: 15px auto;
+	margin-left:23px;
+	overflow:auto;
+}
+
+
+button#play{
+	background:url(../images/play.png)
+}
+
+button#pause{
+	background:url(../images/pause.png)
 }
 
 .container{
@@ -45,6 +69,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align:center;
     padding-bottom: 20px;
 }
