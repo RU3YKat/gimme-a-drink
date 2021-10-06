@@ -1,4 +1,37 @@
 
+span {
+    font-style: italic, un;
+}
+
+
+
+nav {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    background-color:#7b1fa2;
+    height: max-content;
+}
+
+nav .brand-logo {
+    position: unset;
+    font-size: x-large
+}
+
+.nav-wrapper {
+    position: absolute;
+    width: fit-content;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.nav-tabs ul li a {
+    font-size: x-large
+}
+
 .hero{
     background-image: url(../images/martini.jpg);
     background-position: center center;
@@ -13,6 +46,7 @@
     margin: 0;
 }
 
+
 .quote{
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50px;
@@ -24,20 +58,35 @@
     font-weight: bolder;
     font-style: italic;
     font-family:'Times New Roman', Times, serif;
-    width: 40%;
-    padding: 30px;
-    margin: 0;
+    margin: 140px 0 0 0;
+    /* margin: 0 */
+}
+
+.quote h2, h3 {
+    font-size: xxx-large;
+}
+
+.font-family{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #music{
     text-align: center;
     padding: 30px;
-
-    
+    position: absolute;
 }
 
 #music h2{
     margin: 0;
+}
+
+#music h6 {
+    color: white;
+}
+
+.header-music {
+    color: white
+
 }
 
 .container{
@@ -67,4 +116,66 @@
 #player {
     background-color: #d2691e80;
     justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+
+nav .brand-logo {
+    left: 0%;
+    -webkit-transform: unset;
+     transform: unset;
+
+}
+}
+
+@media only screen and (max-width: 460px) {
+    .quote h2, h3 {
+        font-size: xx-large;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    nav {
+        display: block
+    }
+    .nav-wrapper {
+        margin: 0;
+        display: block;
+        text-align: center;
+        width: 100%;
+        
+    }
+    .nav-tabs{
+    
+        width: 100%;
+        height: 71px;
+    }
+
+    ul:not(.browser-default)  {
+        padding-left: 54px;
+    }
+
+    .right {
+        float: unset !important
+    }
+}
+
+@media only screen and (max-width: 277px) {
+    
+    .nav-tabs i {
+        font-size: medium;
+    }
+
+    .nav-tabs ul {
+        padding: 0
+    }
+
+    .nav-tabs ul li {
+       
+    }
+    .nav-tabs ul li a {
+        font-size: large;
+        padding: 0;
+        margin: 0 auto;
+    }
 }
