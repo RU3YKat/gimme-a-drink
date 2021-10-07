@@ -8,8 +8,8 @@ var tag = document.createElement('script');
       // by default, <iframe> displays as inline-block
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '195',
-          width: '320',
+          height: '0',
+          width: '0',
           videoId: 'h7BTVFOAwkQ',
           playerVars: {
             'playsinline': 1
@@ -26,8 +26,12 @@ var tag = document.createElement('script');
         event.target.playVideo();
         // grab select from html then add change.eventlistener
         // when changes, grab video code, call player.loadVideoById()
-        let dropDown = document.querySelector("select")
-            dropDown.addEventListener("change", changedVideo) 
+        let selectButtons = document.querySelector("#btn-group")
+          selectButtons.addEventListener("click", changedVideo)
+            return;
+        
+        // let dropDown = document.querySelector("select")
+        //     dropDown.addEventListener("change", changedVideo) 
       }
 
       // the API calls this function when the player's state changes
@@ -45,3 +49,14 @@ var tag = document.createElement('script');
       function changedVideo(event) {
           player.loadVideoById(event.target.value)
       }
+
+      var playButton = document.getElementById("play");
+      playButton.addEventListener("click", function() {
+        player.playVideo();
+      });
+      
+      var pauseButton = document.getElementById("pause");
+      pauseButton.addEventListener("click", function() {
+        player.pauseVideo();
+      });
+      
