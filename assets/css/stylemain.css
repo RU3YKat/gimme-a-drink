@@ -131,6 +131,10 @@ button#pause{
     margin: 0;
 }
 
+.recipes h2{
+    padding-top: 30px;
+}
+
 .carousel {
     height: 500px;
     perspective: 400px;

@@ -250,14 +250,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-var add = function add() {
-    var ul = document.getElementById("save-list");
-    var li = document.createElement("a");
-    li.classList = "collection-item";
-    li.innerHTML = "Cocktail Name";
+//var add = function add() {
+    //var ul = document.getElementById("save-list");
+    //var li = document.createElement("a");
+    //li.classList = "collection-item";
+    //li.innerHTML = "Cocktail Name";
 
-    ul.appendChild(li);
+    //ul.appendChild(li);
+
 };
-
 
 cocktailList();
