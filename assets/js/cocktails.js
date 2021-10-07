@@ -1,4 +1,5 @@
-var button = document.querySelector("favorite"); 
+
+var button = document.querySelector("#favorite"); 
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
@@ -33,6 +34,7 @@ var cocktailList = function() {
 
 var displayRandomCocktail = function(cocktails) {
     console.log(cocktails.drinks[0]);
+  
     //Drink #1
     var cocktailSection = document.querySelector("#drink1");
         var aTag1= document.createElement("a")
@@ -51,8 +53,8 @@ var displayRandomCocktail = function(cocktails) {
         var drinkName= document.createElement("h5");
         drinkName.classList = "drink-title";
         drinkName.innerHTML = cocktails.drinks[0].strDrink;
-
         cocktailSection.appendChild(drinkName);
+  
     //Drink #2
     var cocktailSection = document.querySelector("#drink2");
         var aTag2= document.createElement("a")
@@ -71,8 +73,8 @@ var displayRandomCocktail = function(cocktails) {
         var drinkName= document.createElement("h5");
         drinkName.classList = "drink-title";
         drinkName.innerHTML = cocktails.drinks[1].strDrink;
-
         cocktailSection.appendChild(drinkName);
+  
     // Drink #3
     var cocktailSection = document.querySelector("#drink3");
         var aTag3= document.createElement("a")
@@ -91,8 +93,8 @@ var displayRandomCocktail = function(cocktails) {
         var drinkName= document.createElement("h5");
         drinkName.classList = "drink-title";
         drinkName.innerHTML = cocktails.drinks[2].strDrink;
-
         cocktailSection.appendChild(drinkName);
+  
     // Drink #4
     var cocktailSection = document.querySelector("#drink4");
     var aTag4= document.createElement("a")
@@ -111,8 +113,8 @@ var displayRandomCocktail = function(cocktails) {
     var drinkName= document.createElement("h5");
     drinkName.classList = "drink-title";
     drinkName.innerHTML = cocktails.drinks[3].strDrink;
-
     cocktailSection.appendChild(drinkName);
+  
     // Drink #5
     var cocktailSection = document.querySelector("#drink5");
     var aTag5= document.createElement("a")
@@ -131,8 +133,8 @@ var displayRandomCocktail = function(cocktails) {
     var drinkName= document.createElement("h5");
     drinkName.classList = "drink-title";
     drinkName.innerHTML = cocktails.drinks[4].strDrink;
-
     cocktailSection.appendChild(drinkName);
+  
     // Drink #6
     var cocktailSection = document.querySelector("#drink6");
     var aTag6= document.createElement("a")
@@ -151,8 +153,8 @@ var displayRandomCocktail = function(cocktails) {
     var drinkName= document.createElement("h5");
     drinkName.classList = "drink-title";
     drinkName.innerHTML = cocktails.drinks[5].strDrink;
-
     cocktailSection.appendChild(drinkName);
+  
     // Drink #7
     var cocktailSection = document.querySelector("#drink7");
     var aTag7= document.createElement("a")
@@ -171,8 +173,8 @@ var displayRandomCocktail = function(cocktails) {
     var drinkName= document.createElement("h5");
     drinkName.classList = "drink-title";
     drinkName.innerHTML = cocktails.drinks[6].strDrink;
-
     cocktailSection.appendChild(drinkName);
+  
     // Drink #8
     var cocktailSection = document.querySelector("#drink8");
     var aTag8= document.createElement("a")
@@ -191,8 +193,8 @@ var displayRandomCocktail = function(cocktails) {
     var drinkName= document.createElement("h5");
     drinkName.classList = "drink-title";
     drinkName.innerHTML = cocktails.drinks[7].strDrink;
-
     cocktailSection.appendChild(drinkName);
+  
     // Drink #9
     var cocktailSection = document.querySelector("#drink9");
     var aTag9= document.createElement("a")
@@ -211,8 +213,8 @@ var displayRandomCocktail = function(cocktails) {
     var drinkName= document.createElement("h5");
     drinkName.classList = "drink-title";
     drinkName.innerHTML = cocktails.drinks[8].strDrink;
-
     cocktailSection.appendChild(drinkName);
+  
     // Drink 10
     var cocktailSection = document.querySelector("#drink10");
     var aTag10= document.createElement("a")
@@ -231,9 +233,7 @@ var displayRandomCocktail = function(cocktails) {
     var drinkName= document.createElement("h5");
     drinkName.classList = "drink-title";
     drinkName.innerHTML = cocktails.drinks[9].strDrink;
-
     cocktailSection.appendChild(drinkName);
-};
 
 function recipeInfo(e,cocktails){
     
@@ -248,6 +248,16 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
     M.Carousel.init(elems);
 });
+
+
+var add = function add() {
+    var ul = document.getElementById("save-list");
+    var li = document.createElement("a");
+    li.classList = "collection-item";
+    li.innerHTML = "Cocktail Name";
+
+    ul.appendChild(li);
+};
 
 
 cocktailList();
