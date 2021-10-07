@@ -1,3 +1,5 @@
+var button = document.querySelector("favorite");
+
 var cocktailList = function() {
 
     fetch("https://the-cocktail-db.p.rapidapi.com/randomselection.php", {
@@ -34,8 +36,8 @@ var displayRandomCocktail = function(cocktails) {
 
         cocktailSection.appendChild(img);
 
-        var drinkName= document.createElement("span");
-        drinkName.classList = "card-title";
+        var drinkName= document.createElement("h5");
+        drinkName.classList = "drink-title";
         drinkName.innerHTML = cocktails.drinks[0].strDrink;
 
         cocktailSection.appendChild(drinkName);
@@ -64,8 +66,8 @@ var displayRandomCocktail = function(cocktails) {
 
         cocktailSection.appendChild(img);
 
-        var drinkName= document.createElement("span");
-        drinkName.classList = "card-title";
+        var drinkName= document.createElement("h5");
+        drinkName.classList = "drink-title";
         drinkName.innerHTML = cocktails.drinks[1].strDrink;
 
         cocktailSection.appendChild(drinkName);
@@ -94,8 +96,8 @@ var displayRandomCocktail = function(cocktails) {
 
         cocktailSection.appendChild(img);
 
-        var drinkName= document.createElement("span");
-        drinkName.classList = "card-title";
+        var drinkName= document.createElement("h5");
+        drinkName.classList = "drink-title";
         drinkName.innerHTML = cocktails.drinks[2].strDrink;
 
         cocktailSection.appendChild(drinkName);
@@ -124,8 +126,8 @@ var displayRandomCocktail = function(cocktails) {
 
         cocktailSection.appendChild(img);
 
-        var drinkName= document.createElement("span");
-        drinkName.classList = "card-title";
+        var drinkName= document.createElement("h5");
+        drinkName.classList = "drink-title";
         drinkName.innerHTML = cocktails.drinks[3].strDrink;
 
         cocktailSection.appendChild(drinkName);
@@ -145,6 +147,96 @@ var displayRandomCocktail = function(cocktails) {
 
             ingredientSection.appendChild(ingredient);
         };
+    
+    var cocktailSection = document.querySelector("#drink5");
+
+        var img = document.createElement("img");
+        img.classList = "responsive-img";
+        img.src = cocktails.drinks[4].strDrinkThumb;
+
+        cocktailSection.appendChild(img);
+
+        var drinkName= document.createElement("h5");
+        drinkName.classList = "drink-title";
+        drinkName.innerHTML = cocktails.drinks[4].strDrink;
+
+        cocktailSection.appendChild(drinkName);
+
+    var cocktailSection = document.querySelector("#drink6");
+
+        var img = document.createElement("img");
+        img.classList = "responsive-img";
+        img.src = cocktails.drinks[5].strDrinkThumb;
+
+        cocktailSection.appendChild(img);
+
+        var drinkName= document.createElement("h5");
+        drinkName.classList = "drink-title";
+        drinkName.innerHTML = cocktails.drinks[5].strDrink;
+
+        cocktailSection.appendChild(drinkName);
+
+    var cocktailSection = document.querySelector("#drink7");
+
+        var img = document.createElement("img");
+        img.classList = "responsive-img";
+        img.src = cocktails.drinks[6].strDrinkThumb;
+
+        cocktailSection.appendChild(img);
+
+        var drinkName= document.createElement("h5");
+        drinkName.classList = "drink-title";
+        drinkName.innerHTML = cocktails.drinks[6].strDrink;
+
+        cocktailSection.appendChild(drinkName);
+
+    var cocktailSection = document.querySelector("#drink8");
+
+        var img = document.createElement("img");
+        img.classList = "responsive-img";
+        img.src = cocktails.drinks[7].strDrinkThumb;
+
+        cocktailSection.appendChild(img);
+
+        var drinkName= document.createElement("h5");
+        drinkName.classList = "card-title";
+        drinkName.innerHTML = cocktails.drinks[7].strDrink;
+
+        cocktailSection.appendChild(drinkName);
+
+    var cocktailSection = document.querySelector("#drink9");
+
+        var img = document.createElement("img");
+        img.classList = "responsive-img";
+        img.src = cocktails.drinks[8].strDrinkThumb;
+
+        cocktailSection.appendChild(img);
+
+        var drinkName= document.createElement("h5");
+        drinkName.classList = "card-title";
+        drinkName.innerHTML = cocktails.drinks[8].strDrink;
+
+        cocktailSection.appendChild(drinkName);
+
+    var cocktailSection = document.querySelector("#drink10");
+
+        var img = document.createElement("img");
+        img.classList = "responsive-img";
+        img.src = cocktails.drinks[9].strDrinkThumb;
+
+        cocktailSection.appendChild(img);
+
+        var drinkName= document.createElement("h5");
+        drinkName.classList = "card-title";
+        drinkName.innerHTML = cocktails.drinks[9].strDrink;
+
+        cocktailSection.appendChild(drinkName);
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+    console.log();
+});
 
 cocktailList();
