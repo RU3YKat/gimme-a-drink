@@ -1,6 +1,7 @@
+var apiKey = "AIzaSyCZzw14J4e_L6D28-1CyzTbw37T4SSQFo4";
 var tag = document.createElement('script');
 
-      tag.src = "https://www.youtube.com/iframe_api";
+      tag.src = "http://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
@@ -39,7 +40,7 @@ var tag = document.createElement('script');
       var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 100000);
+          setTimeout(stopVideo, 1000 * 60 * 60);
           done = true;
         }
       }
