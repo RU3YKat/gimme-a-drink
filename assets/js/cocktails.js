@@ -42,22 +42,6 @@ var displayRandomCocktail = function(cocktails) {
 
         cocktailSection.appendChild(drinkName);
 
-    var ingredientSection = document.querySelector("#list1");
-
-        for(var i=1; i<16; i++) {
-            console.log();
-
-            if(cocktails.drinks[0][`strIngredient${i}`] == null  ||  cocktails.drinks[0][`strIngredient${i}`] == "") {
-                break;
-            }
-
-            var ingredient = document.createElement("li");
-            ingredient.ClassList = "collection-item";
-            ingredient.innerHTML = cocktails.drinks[0][`strMeasure${i}`] + ": " + cocktails.drinks[0][`strIngredient${i}`];
-
-            ingredientSection.appendChild(ingredient);
-        };
-
     var cocktailSection = document.querySelector("#drink2");
 
         var img = document.createElement("img");
@@ -71,22 +55,6 @@ var displayRandomCocktail = function(cocktails) {
         drinkName.innerHTML = cocktails.drinks[1].strDrink;
 
         cocktailSection.appendChild(drinkName);
-
-    var ingredientSection = document.querySelector("#list2");
-
-        for(var i=1; i<16; i++) {
-            console.log();
-
-            if(cocktails.drinks[1][`strIngredient${i}`] == null  ||  cocktails.drinks[1][`strIngredient${i}`] == "") {
-                break;
-            }
-            
-            var ingredient = document.createElement("li");
-            ingredient.ClassList = "collection-item";
-            ingredient.innerHTML = cocktails.drinks[1][`strMeasure${i}`] + ": " + cocktails.drinks[1][`strIngredient${i}`];
-
-            ingredientSection.appendChild(ingredient);
-        };
 
     var cocktailSection = document.querySelector("#drink3");
 
@@ -102,22 +70,6 @@ var displayRandomCocktail = function(cocktails) {
 
         cocktailSection.appendChild(drinkName);
 
-    var ingredientSection = document.querySelector("#list3");
-
-        for(var i=1; i<16; i++) {
-            console.log();
-
-            if(cocktails.drinks[2][`strIngredient${i}`] == null  ||  cocktails.drinks[2][`strIngredient${i}`] == "") {
-                break;
-            }
-            
-            var ingredient = document.createElement("li");
-            ingredient.ClassList = "collection-item";
-            ingredient.innerHTML = cocktails.drinks[2][`strMeasure${i}`] + ": " + cocktails.drinks[2][`strIngredient${i}`];
-
-            ingredientSection.appendChild(ingredient);
-        };
-
     var cocktailSection = document.querySelector("#drink4");
 
         var img = document.createElement("img");
@@ -131,22 +83,6 @@ var displayRandomCocktail = function(cocktails) {
         drinkName.innerHTML = cocktails.drinks[3].strDrink;
 
         cocktailSection.appendChild(drinkName);
-
-    var ingredientSection = document.querySelector("#list4");
-
-        for(var i=1; i<16; i++) {
-            console.log();
-
-            if(cocktails.drinks[3][`strIngredient${i}`] == null  ||  cocktails.drinks[3][`strIngredient${i}`] == "") {
-                break;
-            }
-            
-            var ingredient = document.createElement("li");
-            ingredient.ClassList = "collection-item";
-            ingredient.innerHTML = cocktails.drinks[3][`strMeasure${i}`] + ": " + cocktails.drinks[3][`strIngredient${i}`];
-
-            ingredientSection.appendChild(ingredient);
-        };
     
     var cocktailSection = document.querySelector("#drink5");
 

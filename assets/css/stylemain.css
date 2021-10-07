@@ -91,10 +91,9 @@ button#pause{
     margin: 0;
 }
 
-<<<<<<< HEAD
 
 .carousel {
-    height: 460px;
+    height: 500px;
     perspective: 400px;
 }
 
@@ -103,7 +102,7 @@ button#pause{
 }
 
 .carousel .carousel-item {
-    width: 280px;
+    width: 270px;
 }
 
 .carousel .carousel-item img {
@@ -114,5 +113,3 @@ button#pause{
     color: white;
     text-align: center;
 }
-=======
->>>>>>> 76756cb0ef90d792696ab508d713d59004b2e67f
