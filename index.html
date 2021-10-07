@@ -10,6 +10,10 @@
 </head>
 <body>
     <section class="main-content">
+        <div class="modal">
+            
+            Hello
+        </div>
         <form class="intro-form">
                 <h2>
                     Welcome to Gimmie-a-Drink!
@@ -27,12 +31,36 @@
                     </label>
                 </p>
                 <div class="button-holder">
-                <button class="z-depth-5 waves-effect waves-light btn-large" src="">
-                    <a href="main.html"> Gimmie-a-Drink! </a>
+                <button class="z-depth-5 waves-effect waves-light btn-large" id="grab-drink">
+                    Gimmie-a-Drink!
                 </button>
                 </div>
         </form>
     </section>
+    <script>
+        var checkboxEl = document.querySelector("#checkbox");
+        var buttonEl = document.querySelector("#grab-drink");
+        function acknowledgement (event) {
+            event.preventDefault();
+            console.log("button clicked");
+            if (!checkboxEl.checked) {
+                denied();
+            }
+            else {
+                document.location.replace("./main.htm");
+            };
+        };
+
+        function denied(){
+            console.log("denied function")
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems, options);
+            })
+        }
+        buttonEl.addEventListener("click", acknowledgement);
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/landing-page-acknowledgement.j"></script>
 </body>
 </html>
