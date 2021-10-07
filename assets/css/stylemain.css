@@ -14,8 +14,8 @@
 }
 
 .quote{
-    background-color: rgba(240, 248, 255, .5);
-    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,23 +25,60 @@
     font-style: italic;
     font-family:'Times New Roman', Times, serif;
     width: 40%;
-    height: 65%;
     padding: 30px;
     margin: 0;
 }
 
 #music{
     text-align: center;
-    
 }
 
 #music h2{
     margin: 0;
+    border-bottom: rgb(100, 100, 255) solid ;
+}
+#btn-group{
+    margin-bottom: 20px;
+}
+
+.audio-player{
+    border-radius: 50px;
+	background: url(../images/music-player-background.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+}
+
+#buttons{
+	width:90%;
+	display: block;
+    margin: 15px auto;
+	margin-left:23px;
+
+}
+
+
+button#play{
+	width:70px;
+	height:70px;
+	background:url(../images/play.png) no-repeat;float:left;
+}
+
+button#pause{
+	width:70px;
+	height:70px;
+	background:url(../images/pause.png) no-repeat;float:left;
 }
 
 .container{
     margin-bottom: 0;
-    height:40vh
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding-bottom: 20px;
 }
 
 .recipes{
@@ -54,6 +91,7 @@
     margin: 0;
 }
 
+<<<<<<< HEAD
 
 .carousel {
     height: 460px;
@@ -76,3 +114,5 @@
     color: white;
     text-align: center;
 }
+=======
+>>>>>>> 76756cb0ef90d792696ab508d713d59004b2e67f
