@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./assets/css/stylemain.css">
+    <script src="https://kit.fontawesome.com/1d5eee32c8.js" crossorigin="anonymous"></script>
     <title>Gimmie-a-Drink!</title>
 </head>
 <body class="purple darken-2">
     <header>
         <nav>
             <div class="nav-wrapper purple darken-2">
-                <a href="index.html" class="brand-logo">Gimme A Drink</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <a href="index.html" class="brand-logo">Gimme A Drink </a>
+            </div>
+            <div class="nav-tabs">
+                <ul id="nav-mobile" class="right">
                     <li>
-                        <a href=#music>Music</a>
+                          <a href=#music> <i class="fas fa-music"></i> Music </a>
                     </li>
                     <li>
-                        <a href=#cocktails>Cocktails</a>
+                          <a href=#cocktails> <i class="fas fa-glass-martini-alt"></i> Cocktails</a>
                     </li>
                 </ul>
             </div>
@@ -28,33 +31,32 @@
     <div>
         <div class="hero">
             <div class="quote container"> 
-                <h2 >
+                <h2>
                     “Alcohol may be man’s worst enemy, but the bible says love your enemy.” <br> 
                 </h2>
                 <h3>— Frank Sinatra</h3>
             </div>
         </div>
         <div id="music" class= "purple darken-2">
-            
             <div class="row container">
-                <h2 class="header-music white-text">Music</h2>
-                <p class="white-text">Welcome to the music section, where you can search and listen to any song to your liking while you find your favorite cocktail recipe!
+                <h2 class="header-music white-text font-family">Music</h2>
+                <p class="white-text font-family">Welcome to the music section, where you can search and listen to any song to your liking while you find your favorite cocktail recipe!
                 </p>
             </div>
             <div id="btn-group" style="width:100%">
                 <button value="J0y6wM0aAgE" class="btn blue lighten-1">Night Drive</button>
-                <button value="YrcyW38bUVI" class="btn blue lighten-1">Endless Sunday Jazz</button>
-                <button value="E5DJn2sV6yQ" class="btn blue lighten-1">JUST RELAX</button>
+                <button value="YrcyW38bUVI" class="btn blue lighten-1">Endless Sunday <span> Jazz </span></button>
+                <button value="E5DJn2sV6yQ" class="btn blue lighten-1">JUST <span> RELAX </span></button>
                 <button value="ND-Q3zdgMFQ" class="btn blue lighten-1">the Night Lounge</button>
                 <button value="VQ5mH_hyKU0" class="btn blue lighten-1">After Hours</button>
             </div>
             <div class="row container audio-player">
                 <div>
                     <div id="buttons">
-                    <span>
+                      <span>
                         <button id="play"></button>
                         <button id="pause"></button>
-                        </span>
+                      </span>
                     </div>
                     <div class="clearfix"></div>
                     <div id="tracker">
@@ -64,9 +66,8 @@
                         <span id="duration"></span>
                     </div>
                 </div>
-            </div>
-                
-                <div id="player"></div>
+            </div> 
+            <div id="player"></div>
         </div>
         <div class="recipes">
             <h2 class="header-cocktails center-align white-text underline">Cocktails</h2>
@@ -93,16 +94,15 @@
             </div>
         </section>
     </div>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
     <script src="./assets/js/yt-player.js"></script>
     <script src="./assets/js/cocktails.js"></script>
 </body>
-<footer class="page-footer purple darken-2">
-    <div>
+  <footer class="page-footer purple darken-2">
+    <div class="font-family">
         © 2021 Brought to you by Group 4
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        <a class="grey-text text-lighten-4 right font-family" href="#!">More Links</a>
     </div>
-</footer>
+  </footer>
 </html>
