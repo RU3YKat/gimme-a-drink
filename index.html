@@ -40,6 +40,7 @@
     <script>
         var checkboxEl = document.querySelector("#checkbox");
         var buttonEl = document.querySelector("#grab-drink");
+        const elem = document.getElementById('.modal');
         function acknowledgement (event) {
             event.preventDefault();
             console.log("button clicked");
@@ -50,13 +51,17 @@
                 document.location.replace("./main.htm");
             };
         };
+        
+
 
         function denied(){
             console.log("denied function")
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.modal');
-                var instances = M.Modal.init(elems, options);
-            })
+            var instance = M.Modal.getInstance(elem);
+            instance.open();
+            // document.addEventListener('DOMContentLoaded', function() {
+            //     var elems = document.querySelectorAll('.modal');
+            //     var instances = M.Modal.init(elems, options);
+            // })
         }
         buttonEl.addEventListener("click", acknowledgement);
     </script>
