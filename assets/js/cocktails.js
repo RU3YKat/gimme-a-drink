@@ -1,4 +1,4 @@
-var button = document.querySelector("favorite");
+var button = document.querySelector("#favorite");
 
 var cocktailList = function() {
 
@@ -135,7 +135,7 @@ var displayRandomCocktail = function(cocktails) {
         cocktailSection.appendChild(img);
 
         var drinkName= document.createElement("h5");
-        drinkName.classList = "card-title";
+        drinkName.classList = "drink-title";
         drinkName.innerHTML = cocktails.drinks[7].strDrink;
 
         cocktailSection.appendChild(drinkName);
@@ -149,7 +149,7 @@ var displayRandomCocktail = function(cocktails) {
         cocktailSection.appendChild(img);
 
         var drinkName= document.createElement("h5");
-        drinkName.classList = "card-title";
+        drinkName.classList = "drink-title";
         drinkName.innerHTML = cocktails.drinks[8].strDrink;
 
         cocktailSection.appendChild(drinkName);
@@ -163,7 +163,7 @@ var displayRandomCocktail = function(cocktails) {
         cocktailSection.appendChild(img);
 
         var drinkName= document.createElement("h5");
-        drinkName.classList = "card-title";
+        drinkName.classList = "drink-title";
         drinkName.innerHTML = cocktails.drinks[9].strDrink;
 
         cocktailSection.appendChild(drinkName);
@@ -174,5 +174,15 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Carousel.init(elems);
     console.log();
 });
+
+var add = function add() {
+    var ul = document.getElementById("save-list");
+    var li = document.createElement("a");
+    li.classList = "collection-item";
+    li.innerHTML = "Cocktail Name";
+
+    ul.appendChild(li);
+};
+
 
 cocktailList();
