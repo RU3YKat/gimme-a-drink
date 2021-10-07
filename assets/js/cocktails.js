@@ -1,5 +1,3 @@
-var button = document.querySelector("#favorite");
-
 var cocktailList = function() {
 
     fetch("https://the-cocktail-db.p.rapidapi.com/randomselection.php", {
@@ -25,164 +23,156 @@ var cocktailList = function() {
         });
 };
 
-var displayRandomCocktail = function(cocktails) {
-    console.log(cocktails.drinks[0]);
 
-    var cocktailSection = document.querySelector("#drink1");
+    var displayRandomCocktail = function(cocktails) {
+        console.log(cocktails.drinks[""]);
 
-        var img = document.createElement("img");
-        img.classList = "responsive-img";
-        img.src = cocktails.drinks[0].strDrinkThumb;
+        var cocktailSection = document.querySelector("#drink1");
 
-        cocktailSection.appendChild(img);
+            var img = document.createElement("img");
+            img.classList = "responsive-img";
+            img.src = cocktails.drinks[0].strDrinkThumb;
 
-        var drinkName= document.createElement("h5");
-        drinkName.classList = "drink-title";
-        drinkName.innerHTML = cocktails.drinks[0].strDrink;
+            cocktailSection.appendChild(img);
 
-        cocktailSection.appendChild(drinkName);
+            var drinkName= document.createElement("h5");
+            drinkName.classList = "drink-title";
+            drinkName.innerHTML = cocktails.drinks[0].strDrink;
 
-    var cocktailSection = document.querySelector("#drink2");
+            cocktailSection.appendChild(drinkName);
 
-        var img = document.createElement("img");
-        img.classList = "responsive-img";
-        img.src = cocktails.drinks[1].strDrinkThumb;
+        var cocktailSection = document.querySelector("#drink2");
 
-        cocktailSection.appendChild(img);
+            var img = document.createElement("img");
+            img.classList = "responsive-img";
+            img.src = cocktails.drinks[1].strDrinkThumb;
 
-        var drinkName= document.createElement("h5");
-        drinkName.classList = "drink-title";
-        drinkName.innerHTML = cocktails.drinks[1].strDrink;
+            cocktailSection.appendChild(img);
 
-        cocktailSection.appendChild(drinkName);
+            var drinkName= document.createElement("h5");
+            drinkName.classList = "drink-title";
+            drinkName.innerHTML = cocktails.drinks[1].strDrink;
 
-    var cocktailSection = document.querySelector("#drink3");
+            cocktailSection.appendChild(drinkName);
 
-        var img = document.createElement("img");
-        img.classList = "responsive-img";
-        img.src = cocktails.drinks[2].strDrinkThumb;
+        var cocktailSection = document.querySelector("#drink3");
 
-        cocktailSection.appendChild(img);
+            var img = document.createElement("img");
+            img.classList = "responsive-img";
+            img.src = cocktails.drinks[2].strDrinkThumb;
 
-        var drinkName= document.createElement("h5");
-        drinkName.classList = "drink-title";
-        drinkName.innerHTML = cocktails.drinks[2].strDrink;
+            cocktailSection.appendChild(img);
 
-        cocktailSection.appendChild(drinkName);
+            var drinkName= document.createElement("h5");
+            drinkName.classList = "drink-title";
+            drinkName.innerHTML = cocktails.drinks[2].strDrink;
 
-    var cocktailSection = document.querySelector("#drink4");
+            cocktailSection.appendChild(drinkName);
 
-        var img = document.createElement("img");
-        img.classList = "responsive-img";
-        img.src = cocktails.drinks[3].strDrinkThumb;
+        var cocktailSection = document.querySelector("#drink4");
 
-        cocktailSection.appendChild(img);
+            var img = document.createElement("img");
+            img.classList = "responsive-img";
+            img.src = cocktails.drinks[3].strDrinkThumb;
 
-        var drinkName= document.createElement("h5");
-        drinkName.classList = "drink-title";
-        drinkName.innerHTML = cocktails.drinks[3].strDrink;
+            cocktailSection.appendChild(img);
 
-        cocktailSection.appendChild(drinkName);
-    
-    var cocktailSection = document.querySelector("#drink5");
+            var drinkName= document.createElement("h5");
+            drinkName.classList = "drink-title";
+            drinkName.innerHTML = cocktails.drinks[3].strDrink;
 
-        var img = document.createElement("img");
-        img.classList = "responsive-img";
-        img.src = cocktails.drinks[4].strDrinkThumb;
+            cocktailSection.appendChild(drinkName);
+        
+        var cocktailSection = document.querySelector("#drink5");
 
-        cocktailSection.appendChild(img);
+            var img = document.createElement("img");
+            img.classList = "responsive-img";
+            img.src = cocktails.drinks[4].strDrinkThumb;
 
-        var drinkName= document.createElement("h5");
-        drinkName.classList = "drink-title";
-        drinkName.innerHTML = cocktails.drinks[4].strDrink;
+            cocktailSection.appendChild(img);
 
-        cocktailSection.appendChild(drinkName);
+            var drinkName= document.createElement("h5");
+            drinkName.classList = "drink-title";
+            drinkName.innerHTML = cocktails.drinks[4].strDrink;
 
-    var cocktailSection = document.querySelector("#drink6");
+            cocktailSection.appendChild(drinkName);
 
-        var img = document.createElement("img");
-        img.classList = "responsive-img";
-        img.src = cocktails.drinks[5].strDrinkThumb;
+        var cocktailSection = document.querySelector("#drink6");
 
-        cocktailSection.appendChild(img);
+            var img = document.createElement("img");
+            img.classList = "responsive-img";
+            img.src = cocktails.drinks[5].strDrinkThumb;
 
-        var drinkName= document.createElement("h5");
-        drinkName.classList = "drink-title";
-        drinkName.innerHTML = cocktails.drinks[5].strDrink;
+            cocktailSection.appendChild(img);
 
-        cocktailSection.appendChild(drinkName);
+            var drinkName= document.createElement("h5");
+            drinkName.classList = "drink-title";
+            drinkName.innerHTML = cocktails.drinks[5].strDrink;
 
-    var cocktailSection = document.querySelector("#drink7");
+            cocktailSection.appendChild(drinkName);
 
-        var img = document.createElement("img");
-        img.classList = "responsive-img";
-        img.src = cocktails.drinks[6].strDrinkThumb;
+        var cocktailSection = document.querySelector("#drink7");
 
-        cocktailSection.appendChild(img);
+            var img = document.createElement("img");
+            img.classList = "responsive-img";
+            img.src = cocktails.drinks[6].strDrinkThumb;
 
-        var drinkName= document.createElement("h5");
-        drinkName.classList = "drink-title";
-        drinkName.innerHTML = cocktails.drinks[6].strDrink;
+            cocktailSection.appendChild(img);
 
-        cocktailSection.appendChild(drinkName);
+            var drinkName= document.createElement("h5");
+            drinkName.classList = "drink-title";
+            drinkName.innerHTML = cocktails.drinks[6].strDrink;
 
-    var cocktailSection = document.querySelector("#drink8");
+            cocktailSection.appendChild(drinkName);
 
-        var img = document.createElement("img");
-        img.classList = "responsive-img";
-        img.src = cocktails.drinks[7].strDrinkThumb;
+        var cocktailSection = document.querySelector("#drink8");
 
-        cocktailSection.appendChild(img);
+            var img = document.createElement("img");
+            img.classList = "responsive-img";
+            img.src = cocktails.drinks[7].strDrinkThumb;
 
-        var drinkName= document.createElement("h5");
-        drinkName.classList = "drink-title";
-        drinkName.innerHTML = cocktails.drinks[7].strDrink;
+            cocktailSection.appendChild(img);
 
-        cocktailSection.appendChild(drinkName);
+            var drinkName= document.createElement("h5");
+            drinkName.classList = "drink-title";
+            drinkName.innerHTML = cocktails.drinks[7].strDrink;
 
-    var cocktailSection = document.querySelector("#drink9");
+            cocktailSection.appendChild(drinkName);
 
-        var img = document.createElement("img");
-        img.classList = "responsive-img";
-        img.src = cocktails.drinks[8].strDrinkThumb;
+        var cocktailSection = document.querySelector("#drink9");
 
-        cocktailSection.appendChild(img);
+            var img = document.createElement("img");
+            img.classList = "responsive-img";
+            img.src = cocktails.drinks[8].strDrinkThumb;
 
-        var drinkName= document.createElement("h5");
-        drinkName.classList = "drink-title";
-        drinkName.innerHTML = cocktails.drinks[8].strDrink;
+            cocktailSection.appendChild(img);
 
-        cocktailSection.appendChild(drinkName);
+            var drinkName= document.createElement("h5");
+            drinkName.classList = "drink-title";
+            drinkName.innerHTML = cocktails.drinks[8].strDrink;
 
-    var cocktailSection = document.querySelector("#drink10");
+            cocktailSection.appendChild(drinkName);
 
-        var img = document.createElement("img");
-        img.classList = "responsive-img";
-        img.src = cocktails.drinks[9].strDrinkThumb;
+        var cocktailSection = document.querySelector("#drink10");
 
-        cocktailSection.appendChild(img);
+            var img = document.createElement("img");
+            img.classList = "responsive-img";
+            img.src = cocktails.drinks[9].strDrinkThumb;
 
-        var drinkName= document.createElement("h5");
-        drinkName.classList = "drink-title";
-        drinkName.innerHTML = cocktails.drinks[9].strDrink;
+            cocktailSection.appendChild(img);
 
-        cocktailSection.appendChild(drinkName);
-};
+            var drinkName= document.createElement("h5");
+            drinkName.classList = "drink-title";
+            drinkName.innerHTML = cocktails.drinks[9].strDrink;
+
+            cocktailSection.appendChild(drinkName);
+
+    };
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems);
     console.log();
 });
-
-var add = function add() {
-    var ul = document.getElementById("save-list");
-    var li = document.createElement("a");
-    li.classList = "collection-item";
-    li.innerHTML = "Cocktail Name";
-
-    ul.appendChild(li);
-};
-
 
 cocktailList();
