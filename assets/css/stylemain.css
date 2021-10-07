@@ -181,6 +181,10 @@ button#pause{
     margin: 0;
 }
 
+.modal-content p, .modal-footer a {
+    text-shadow: none;
+}
+
 .recipes h2{
     padding-top: 30px;
 }
@@ -308,7 +312,6 @@ nav .brand-logo {
         border-top: solid 2px black;
         width: 100%
     }
-}
 
 @media only screen and (max-width: 277px) {
     
