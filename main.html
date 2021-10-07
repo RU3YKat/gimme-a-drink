@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
     <title>Gimmie-a-Drink!</title>
-</head>
+    </head>
 <body class="purple darken-2">
     <header>
         <nav>
@@ -27,84 +27,267 @@
                     <li>
                         <a href=#cocktails> <i class="fas fa-glass-martini-alt"></i> Cocktails</a>
                     </li>
-                </ul>
+                </ul>                          
+              </div>
+            </nav>
+        </header>
+      
+        <div>
+            <div class="hero">
+                <div class="quote container">
+                    <h2>
+                        “Alcohol may be man’s worst enemy, but the bible says
+                        love your enemy.” <br />
+                    </h2>
+                    <h3>— Frank Sinatra</h3>
+                </div>
             </div>
-        </nav>
-    </header>
-    <div>
-        <div class="hero">
-            <div class="quote container"> 
-                <h2>
-                    “Alcohol may be man’s worst enemy, but the bible says love your enemy.” <br> 
-                </h2>
-                <h3>— Frank Sinatra</h3>
-            </div>
-        </div>
-        <div id="music" class= "purple darken-2">
-            <div class="row container">
-                <h2 class="header-music white-text font-family">Music</h2>
-                <p class="white-text font-family">Welcome to the music section, where you can select and listen to any mood to your liking while you find your favorite cocktail recipe!
-                </p>
-            </div>
-            <div id="btn-group" style="width:100%">
-                <button value="J0y6wM0aAgE" class="btn blue lighten-1">Night Drive</button>
-                <button value="YrcyW38bUVI" class="btn blue lighten-1">Endless Sunday <span> Jazz </span></button>
-                <button value="E5DJn2sV6yQ" class="btn blue lighten-1">JUST <span> RELAX </span></button>
-                <button value="ND-Q3zdgMFQ" class="btn blue lighten-1">the Night Lounge</button>
-                <button value="VQ5mH_hyKU0" class="btn blue lighten-1">After Hours</button>
-            </div>
-            <div class="row container audio-player">
-                <div id="button-container">
-                    <div id="buttons">
-                        <span>
-                            <button id="play"></button>
-                            <button id="pause"></button>
-                        </span>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div id="tracker">
-                        <div id="progressBar">
-                            <span id="progress"></span>
+            <div id="music" class="purple darken-2">
+                <div class="row container">
+                    <h2 class="header-music white-text font-family">Music</h2>
+                    <p class="white-text font-family">
+                        Welcome to the music section, where you can search and
+                        listen to any song to your liking while you find your
+                        favorite cocktail recipe!
+                    </p>
+                </div>
+                <div id="btn-group" style="width: 100%">
+                    <button value="J0y6wM0aAgE" class="btn blue lighten-1">
+                        Night Drive
+                    </button>
+                    <button value="YrcyW38bUVI" class="btn blue lighten-1">
+                        Endless Sunday <span> Jazz </span>
+                    </button>
+                    <button value="E5DJn2sV6yQ" class="btn blue lighten-1">
+                        JUST <span> RELAX </span>
+                    </button>
+                    <button value="ND-Q3zdgMFQ" class="btn blue lighten-1">
+                        the Night Lounge
+                    </button>
+                    <button value="VQ5mH_hyKU0" class="btn blue lighten-1">
+                        After Hours
+                    </button>
+                </div>
+                <div class="row container audio-player">
+                    <div>
+                        <div id="buttons">
+                            <span>
+                                <button id="play"></button>
+                                <button id="pause"></button>
+                            </span>
                         </div>
-                        <span id="duration"></span>
+                        <div class="clearfix"></div>
+                        <div id="tracker">
+                            <div id="progressBar">
+                                <span id="progress"></span>
+                            </div>
+                            <span id="duration"></span>
+                        </div>
                     </div>
                 </div>
-            </div> 
-            <div id="player"></div>
+                <div id="player"></div>
+            </div>
+            <div class="recipes">
+                <h2 class="header-cocktails center-align white-text underline">
+                    Cocktails
+                </h2>
+                <div class="carousel">
+                    <a class="carousel-item hoverable" id="drink1" href="#one!"
+                        ><button
+                            class="
+                                btn-floating
+                                halfway-fab
+                                waves-effect waves-light
+                                red
+                                pulse
+                            "
+                            id="favorite"
+                        >
+                            <i class="material-icons">favorite</i>
+                        </button></a
+                    >
+                    <a class="carousel-item hoverable" id="drink2" href="#two!"
+                        ><button
+                            class="
+                                btn-floating
+                                halfway-fab
+                                waves-effect waves-light
+                                red
+                                pulse
+                            "
+                            id="favorite"
+                        >
+                            <i class="material-icons">favorite</i>
+                        </button></a
+                    >
+                    <a
+                        class="carousel-item hoverable"
+                        id="drink3"
+                        href="#three!"
+                        ><button
+                            class="
+                                btn-floating
+                                halfway-fab
+                                waves-effect waves-light
+                                red
+                                pulse
+                            "
+                            id="favorite"
+                        >
+                            <i class="material-icons">favorite</i>
+                        </button></a
+                    >
+                    <a class="carousel-item hoverable" id="drink4" href="#four!"
+                        ><button
+                            class="
+                                btn-floating
+                                halfway-fab
+                                waves-effect waves-light
+                                red
+                                pulse
+                            "
+                            id="favorite"
+                        >
+                            <i class="material-icons">favorite</i>
+                        </button></a
+                    >
+                    <a class="carousel-item hoverable" id="drink5" href="#five!"
+                        ><button
+                            class="
+                                btn-floating
+                                halfway-fab
+                                waves-effect waves-light
+                                red
+                                pulse
+                            "
+                            id="favorite"
+                        >
+                            <i class="material-icons">favorite</i>
+                        </button></a
+                    >
+                    <a class="carousel-item hoverable" id="drink6" href="#six!"
+                        ><button
+                            class="
+                                btn-floating
+                                halfway-fab
+                                waves-effect waves-light
+                                red
+                                pulse
+                            "
+                            id="favorite"
+                        >
+                            <i class="material-icons">favorite</i>
+                        </button></a
+                    >
+                    <a
+                        class="carousel-item hoverable"
+                        id="drink7"
+                        href="#seven!"
+                        ><button
+                            class="
+                                btn-floating
+                                halfway-fab
+                                waves-effect waves-light
+                                red
+                                pulse
+                            "
+                            id="favorite"
+                        >
+                            <i class="material-icons">favorite</i>
+                        </button></a
+                    >
+                    <a
+                        class="carousel-item hoverable"
+                        id="drink8"
+                        href="#eight!"
+                        ><button
+                            class="
+                                btn-floating
+                                halfway-fab
+                                waves-effect waves-light
+                                red
+                                pulse
+                            "
+                            id="favorite"
+                        >
+                            <i class="material-icons">favorite</i>
+                        </button></a
+                    >
+                    <a class="carousel-item hoverable" id="drink9" href="#nine!"
+                        ><button
+                            class="
+                                btn-floating
+                                halfway-fab
+                                waves-effect waves-light
+                                red
+                                pulse
+                            "
+                            id="favorite"
+                        >
+                            <i class="material-icons">favorite</i>
+                        </button></a
+                    >
+                    <a class="carousel-item hoverable" id="drink10" href="#ten!"
+                        ><button
+                            class="
+                                btn-floating
+                                halfway-fab
+                                waves-effect waves-light
+                                red
+                                pulse
+                            "
+                            id="favorite"
+                        >
+                            <i class="material-icons">favorite</i>
+                        </button></a
+                    >
+                </div>
+            </div>
+            <section class="container">
+                <h2 class="favorie-drinks center-align white-text underline">
+                    Favorite Cocktails
+                </h2>
+                <div class="collection" id="save-list">
+                    <a href="#!" class="collection-item">Cocktail Name</a>
+                    <a href="#!" class="collection-item">Cocktail Name</a>
+                    <a href="#!" class="collection-item">Cocktail Name</a>
+                    <a href="#!" class="collection-item">Cocktail Name</a>
+                </div>
+            </section>
         </div>
-        <div class="recipes">
-            <h2 class="header-cocktails center-align white-text underline font-family">Cocktails</h2>
-            <div class="carousel">
-                <a class="carousel-item hoverable font-family" id="drink1" href="#one!"><button class="btn-floating halfway-fab waves-effect waves-light red pulse" id="favorite"><i class="material-icons">favorite</i></button></a>
-                <a class="carousel-item hoverable font-family" id="drink2" href="#two!"><button class="btn-floating halfway-fab waves-effect waves-light red pulse" id="favorite"><i class="material-icons">favorite</i></button></a>
-                <a class="carousel-item hoverable font-family" id="drink3" href="#three!"><button class="btn-floating halfway-fab waves-effect waves-light red pulse" id="favorite"><i class="material-icons">favorite</i></button></a>
-                <a class="carousel-item hoverable font-family" id="drink4" href="#four!"><button class="btn-floating halfway-fab waves-effect waves-light red pulse" id="favorite"><i class="material-icons">favorite</i></button></a>
-                <a class="carousel-item hoverable font-family" id="drink5" href="#five!"><button class="btn-floating halfway-fab waves-effect waves-light red pulse" id="favorite"><i class="material-icons">favorite</i></button></a>
-                <a class="carousel-item hoverable font-family" id="drink6" href="#six!"><button class="btn-floating halfway-fab waves-effect waves-light red pulse" id="favorite"><i class="material-icons">favorite</i></button></a>
-                <a class="carousel-item hoverable font-family" id="drink7" href="#seven!"><button class="btn-floating halfway-fab waves-effect waves-light red pulse" id="favorite"><i class="material-icons">favorite</i></button></a>
-                <a class="carousel-item hoverable font-family" id="drink8" href="#eight!"><button class="btn-floating halfway-fab waves-effect waves-light red pulse" id="favorite"><i class="material-icons">favorite</i></button></a>
-                <a class="carousel-item hoverable font-family" id="drink9" href="#nine!"><button class="btn-floating halfway-fab waves-effect waves-light red pulse" id="favorite"><i class="material-icons">favorite</i></button></a>
-                <a class="carousel-item hoverable font-family" id="drink10" href="#ten!"><button class="btn-floating halfway-fab waves-effect waves-light red pulse" id="favorite"><i class="material-icons">favorite</i></button></a>
+
+        <!-- Modal Structure -->
+        <div id="recipe-modal" class="modal">
+            <div class="modal-content">
+                <h4 class="drink-name"></h4>
+                <p class="idrink-ingredients"></p>
+                <p class="drink-instructions"></p>
+
+            </div>
+            <div class="modal-footer">
+                <a
+                    href="#!"
+                    class="modal-close waves-effect waves-green btn-flat"
+                    >Agree</a
+                >
             </div>
         </div>
-        <section class="container" id="favorite-cocktails">
-            <h2 class="favorie-drinks center-align white-text underline font-family">Favorite Cocktails</h2>
-            <div class="collection" id="save-list">
-                <a href="#!" class="collection-item font-family">Cocktail Name</a>
-                <a href="#!" class="collection-item font-family">Cocktail Name</a>
-                <a href="#!" class="collection-item font-family">Cocktail Name</a>
-                <a href="#!" class="collection-item font-family">Cocktail Name</a>
-            </div>
-        </section>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/js/yt-player.js"></script>
-    <script src="./assets/js/cocktails.js"></script>
-</body>
-  <footer class="page-footer purple darken-2">
-    <div class="font-family">
-        © 2021 Brought to you by Group 4
-        <a class="grey-text text-lighten-4 right font-family" href="#!">More Links</a>
-    </div>
-  </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="./assets/js/yt-player.js"></script>
+        <script src="./assets/js/cocktails.js"></script>
+    </body>
+    <footer class="page-footer purple darken-2">
+        <div class="font-family">
+            © 2021 Brought to you by Group 4
+            <a class="grey-text text-lighten-4 right font-family" href="#!"
+                >More Links</a
+            >
+        </div>
+    </footer>
 </html>
+
