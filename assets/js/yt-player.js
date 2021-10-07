@@ -31,8 +31,6 @@ var tag = document.createElement('script');
           selectButtons.addEventListener("click", changedVideo)
             return;
         
-        // let dropDown = document.querySelector("select")
-        //     dropDown.addEventListener("change", changedVideo) 
       }
 
       // the API calls this function when the player's state changes
