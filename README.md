@@ -2,7 +2,7 @@
 
 An interactive, relaxation delivering, cocktail finder and atmosphere app
 
-- [Weather Dashboard app] https://ru3ykat.github.io/gimme-a-drink/
+- [gimme-a-drink app] https://ru3ykat.github.io/gimme-a-drink/
 - [Github Repository] https://github.com/RU3YKat/gimme-a-drink/
 
 ## Features
