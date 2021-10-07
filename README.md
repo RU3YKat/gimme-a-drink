@@ -1,4 +1,4 @@
-# gimme-a-break
+# gimme-a-drink
 
 An interactive, relaxation delivering, cocktail finder and atmosphere app
 
