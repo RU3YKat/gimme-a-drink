@@ -214,7 +214,7 @@ var displayRandomCocktail = function(cocktails) {
     drinkName.classList = "drink-title";
     drinkName.innerHTML = cocktails.drinks[8].strDrink;
     cocktailSection.appendChild(drinkName);
-  
+
     // Drink 10
     var cocktailSection = document.querySelector("#drink10");
     var aTag10= document.createElement("a")
@@ -259,6 +259,7 @@ for(var i=1; i<16; i++) {
     ingredient.appendChild(ingred);
 };
 };
+
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');

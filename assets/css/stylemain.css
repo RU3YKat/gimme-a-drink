@@ -1,3 +1,24 @@
+h2 {
+    text-decoration: underline;
+}
+
+h2, a {
+    font-style: italic;
+}
+
+a, h2, p {
+    text-shadow: 2px 2px rgba(0,0,0, 0.5);
+}
+
+span {
+    font-style: italic;
+    font-weight: bold ;
+}
+
+button, .btn {
+    box-shadow: 5px 5px rgba(0,0,0, 0.5);
+}
+
 nav {
     font-family: 'Times New Roman', Times, serif;
     display: flex;
@@ -5,6 +26,13 @@ nav {
     position: absolute;
     background-color:#7b1fa2;
     height: max-content;
+    border-bottom: solid black 2px
+}
+
+nav ul li a:hover {
+    background-color:rgba(0,0,0, 0.5);
+    border-radius: 50%;
+    
 }
 
 nav .brand-logo {
@@ -53,6 +81,11 @@ nav .brand-logo {
     margin: 140px 0 0 0;
 }
 
+.quote h2 {
+    text-shadow: none;
+    text-decoration: none
+}
+
 .quote h2, h3 {
     font-size: xxx-large;
 }
@@ -64,15 +97,20 @@ nav .brand-logo {
 #music{
     text-align: center;
     padding: 30px;
+    border-top: black 2px solid;
 }
 
 #music h2{
     margin: 0;
 }
 
+#music div p {
+    font-size: 20px;
+}    
+
 #btn-group{
     margin-bottom: 20px;
-
+    width: 100%;
 }
 
 .audio-player{
@@ -85,10 +123,22 @@ nav .brand-logo {
 }
 
 #buttons{
-	width:90%;
+	width: 100%;
 	display: block;
     margin: 15px auto;
-	margin-left:23px;
+}
+
+#button-container {
+    width: 100%;
+}
+
+#buttons span {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
 }
 
 button#play{
@@ -118,7 +168,6 @@ button#pause{
     justify-content: center;
     align-items: center;
     text-align:center;
-    padding-bottom: 20px;
 }
 
 .recipes{
@@ -127,8 +176,13 @@ button#pause{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 80vh;
+    border-top: black 2px solid;
+    height: fit-content;
     margin: 0;
+}
+
+.modal-content p, .modal-footer a {
+    text-shadow: none;
 }
 
 .recipes h2{
@@ -157,10 +211,28 @@ button#pause{
     text-align: center;
 }
 
+#favorite-cocktails{
+    border-top: solid 2px black;
+    width: 100%
+}
+
+#save-list a {
+    text-shadow:none;
+}
+
 #player {
     background-color: #d2691e80;
     justify-content: center;
 }
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    background-color: rgb(71, 2, 71);
+    }
 
 @media only screen and (max-width: 992px) {
 
@@ -170,6 +242,24 @@ nav .brand-logo {
     transform: unset;
     }
 }
+
+@media only screen and (max-width: 813px){
+    #btn-group{
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    button {
+        width: 70%;
+        margin: 10px 0;
+    }
+
+    .btn {
+        border-radius: 5px;
+    }
 
 @media only screen and (max-width: 460px) {
     .quote h2, h3 {
@@ -182,37 +272,8 @@ nav .brand-logo {
         margin: 5px 0;
     }
 
-    .btn {
-        border-radius: 5px;
-
-    }
-    
     nav {
         display: block;
-        border-bottom: solid black 2px
-    }
-
-    h2 {
-        text-decoration: underline;
-    }
-
-    a, h2, p{
-        text-shadow: 2px 2px rgba(0,0,0, 0.5);
-    }
-
-    nav ul li a:hover {
-        background-color:rgba(0,0,0, 0.5);
-        border-radius: 50%;
-        
-    }
-  
-    h2, a {
-        font-style: italic;
-    }
-
-    .quote h2 {
-        text-shadow: none;
-        text-decoration: none
     }
 
     .nav-wrapper {
@@ -247,55 +308,10 @@ nav .brand-logo {
         font-size: 20px;
     }
 
-    #button-container {
-        width: 100%;
-    }
-
-    #buttons{
-        margin-left: 0;
-        width: 100%;
-    }
-
-    #btn-group{
-        margin-bottom: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: space-around;
-    }
-
-    #buttons span {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: center;
-    }
-
-    .recipes {
-        border-top: black 2px solid;
-        height: fit-content
-    }
-
     #favorite-cocktails{
         border-top: solid 2px black;
         width: 100%
     }
-
-    #save-list a {
-        text-shadow:none;
-    }
-
-    footer div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
-    background-color: rgb(71, 2, 71);
-    }
-}
 
 @media only screen and (max-width: 277px) {
     

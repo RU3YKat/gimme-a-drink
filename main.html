@@ -17,15 +17,15 @@
         <header>
             <nav>
                 <div class="nav-wrapper purple darken-2">
-                    <a href="index.html" class="brand-logo">Gimme A Drink </a>
+                    <a href="index.html" class="brand-logo font-family">Gimme A Drink </a>
                 </div>
                 <div class="nav-tabs">
                     <ul id="nav-mobile" class="right">
                         <li>
-                            <a href=#music> <i class="fas fa-music"></i> Music </a>
+                            <a href=#music class="font-family"> <i class="fas fa-music "></i> Music </a>
                         </li>
                         <li>
-                            <a href=#cocktails> <i class="fas fa-glass-martini-alt"></i> Cocktails</a>
+                            <a href=#cocktails class="font-family"> <i class="fas fa-glass-martini-alt"></i> Cocktails</a>
                         </li>
                     </ul>                          
                 </div>
@@ -35,11 +35,11 @@
         <div>
             <div class="hero">
                 <div class="quote container">
-                    <h2>
+                    <h2 class="font-family">
                         “Alcohol may be man’s worst enemy, but the bible says
                         love your enemy.” <br />
                     </h2>
-                    <h3>— Frank Sinatra</h3>
+                    <h3 class="font-family">— Frank Sinatra</h3>
                 </div>
             </div>
             <div id="music" class="purple darken-2">
@@ -51,24 +51,24 @@
                     </p>
                 </div>
                 <div id="btn-group" style="width: 100%">
-                    <button value="J0y6wM0aAgE" class="btn blue lighten-1">
+                    <button value="J0y6wM0aAgE" class="btn blue lighten-1 font-family">
                         Night Drive
                     </button>
-                    <button value="YrcyW38bUVI" class="btn blue lighten-1">
+                    <button value="YrcyW38bUVI" class="btn blue lighten-1 font-family">
                         Endless Sunday <span> Jazz </span>
                     </button>
-                    <button value="E5DJn2sV6yQ" class="btn blue lighten-1">
+                    <button value="E5DJn2sV6yQ" class="btn blue lighten-1 font-family">
                         JUST <span> RELAX </span>
                     </button>
-                    <button value="ND-Q3zdgMFQ" class="btn blue lighten-1">
+                    <button value="ND-Q3zdgMFQ" class="btn blue lighten-1 font-family">
                         the Night Lounge
                     </button>
-                    <button value="VQ5mH_hyKU0" class="btn blue lighten-1">
+                    <button value="VQ5mH_hyKU0" class="btn blue lighten-1 font-family">
                         After Hours
                     </button>
                 </div>
                 <div class="row container audio-player">
-                    <div>
+                    <div id="button-container">
                         <div id="buttons">
                             <span>
                                 <button id="play"></button>
@@ -87,7 +87,7 @@
                 <div id="player"></div>
             </div>
             <div class="recipes">
-                <h2 class="header-cocktails center-align white-text underline" id="cocktails">
+                <h2 class="header-cocktails center-align white-text underline font-family" id="cocktails">
                     Cocktails
                 </h2>
                 <div class="carousel">
@@ -242,15 +242,15 @@
                     >
                 </div>
             </div>
-            <section class="container">
-                <h2 class="favorie-drinks center-align white-text underline">
+            <section class="container" id="favorite-cocktails">
+                <h2 class="favorie-drinks center-align white-text underline font-family">
                     Favorite Cocktails
                 </h2>
                 <div class="collection" id="save-list">
-                    <a href="#!" class="collection-item">Cocktail Name</a>
-                    <a href="#!" class="collection-item">Cocktail Name</a>
-                    <a href="#!" class="collection-item">Cocktail Name</a>
-                    <a href="#!" class="collection-item">Cocktail Name</a>
+                    <a href="#!" class="collection-item font-family">Cocktail Name</a>
+                    <a href="#!" class="collection-item font-family">Cocktail Name</a>
+                    <a href="#!" class="collection-item font-family">Cocktail Name</a>
+                    <a href="#!" class="collection-item font-family">Cocktail Name</a>
                 </div>
             </section>
         </div>
@@ -258,17 +258,16 @@
         <!-- Modal Structure -->
         <div id="recipe-modal" class="modal">
             <div class="modal-content">
-                <h4 class="drink-name"></h4>
-                <p class="idrink-ingredients">
-                    
-                </p>
-                <p class="drink-instructions"></p>
+                <h4 class="drink-name font-family"></h4>
+                <ul class="idrink-ingredients font-family">
+                </ul>
+                <p class="drink-instructions font-family"></p>
 
             </div>
             <div class="modal-footer">
                 <a
                     href="#!"
-                    class="modal-close waves-effect waves-green btn-flat"
+                    class="modal-close waves-effect waves-green btn-flat font-family"
                     >Agree</a
                 >
             </div>
