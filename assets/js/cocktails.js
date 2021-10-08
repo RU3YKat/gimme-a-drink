@@ -244,18 +244,20 @@ function recipeInfo(e, cocktails){
     let drinkRecipe = document.querySelector(".drink-instructions")
     drinkRecipe.innerText = cocktails.drinks[drinkNum].strInstructions
 
-    var ingredient = document.querySelector(".idrink-ingredients");
+var ingredient = document.querySelector(".idrink-ingredients");
 
-    for(var i=1; i<16; i++) {
-        console.log();
+for(var i=1; i<16; i++) {
+    console.log();
 
-        if(cocktails.drinks[drinkNum][`strIngredient${i}`] == null  ||  cocktails.drinks[drinkNum][`strIngredient${i}`] == "" || cocktails.drinks[drinkNum][`strMeasure${i}`] == null || cocktails.drinks[drinkNum][`strMeasure${i}`] == "") {
-            break;
-        };
+    if(cocktails.drinks[drinkNum][`strIngredient${i}`] == null  ||  cocktails.drinks[drinkNum][`strIngredient${i}`] == "" || cocktails.drinks[drinkNum][`strMeasure${i}`] == null || cocktails.drinks[drinkNum][`strMeasure${i}`] == "") {
+        break;
+    };
+    console.log(ingredient);
+
     var ingred= document.createElement("li");
     ingred.innerHTML = cocktails.drinks[drinkNum][`strMeasure${i}`] + ": " + cocktails.drinks[drinkNum][`strIngredient${i}`];
     ingredient.appendChild(ingred);
-    };
+};
 };
 
 document.addEventListener('DOMContentLoaded', function() {
