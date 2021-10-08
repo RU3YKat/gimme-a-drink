@@ -245,9 +245,9 @@ function recipeInfo(e, cocktails){
     drinkRecipe.innerText = cocktails.drinks[drinkNum].strInstructions
 
 var ingredient = document.querySelector(".idrink-ingredients");
+    ingredient.innerHTML = '';
 
 for(var i=1; i<16; i++) {
-    console.log();
 
     if(cocktails.drinks[drinkNum][`strIngredient${i}`] == null  ||  cocktails.drinks[drinkNum][`strIngredient${i}`] == "" || cocktails.drinks[drinkNum][`strMeasure${i}`] == null || cocktails.drinks[drinkNum][`strMeasure${i}`] == "") {
         break;
