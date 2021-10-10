@@ -267,12 +267,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-//var add = function add() {
-    //var ul = document.getElementById("save-list");
-    //var li = document.createElement("a");
-    //li.classList = "collection-item";
-    //li.innerHTML = "Cocktail Name";
+var addCocktail = function add() {
+    var savedCocktails = document.getElementById("save1");
+    var img = document.createElement("img");
+    img.classList = "responsive-img";
+    img.src = cocktails.drinks[drinkNum].strDrinkThumb;
 
-    //ul.appendChild(li);
+    savedCocktails.appendChild(img);
+};
 
 cocktailList();
