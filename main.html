@@ -93,6 +93,7 @@
                 <div class="carousel">
                     <a class="carousel-item hoverable" id="drink1" href="#one!"
                         ><button
+                            onClick="add()"
                             class="
                                 btn-floating
                                 halfway-fab
@@ -246,11 +247,18 @@
                 <h2 class="favorie-drinks center-align white-text underline font-family">
                     Favorite Cocktails
                 </h2>
-                <div class="collection" id="save-list">
-                    <a href="#!" class="collection-item font-family">Cocktail Name</a>
-                    <a href="#!" class="collection-item font-family">Cocktail Name</a>
-                    <a href="#!" class="collection-item font-family">Cocktail Name</a>
-                    <a href="#!" class="collection-item font-family">Cocktail Name</a>
+                <div class="row">
+                    <div class="col s12 m3">
+                        <div class="card hoverable">
+                            <div class="card-image" id="save1">
+                                <a class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">delete_forever</i></a>
+                            </div>
+                            <div class="card-content">
+                                <ul class="collection" id="list1">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
