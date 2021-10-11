@@ -1,3 +1,4 @@
+var apiKey = "AIzaSyCZzw14J4e_L6D28-1CyzTbw37T4SSQFo4";
 var tag = document.createElement('script');
 
       tag.src = "https://www.youtube.com/iframe_api";
@@ -8,8 +9,8 @@ var tag = document.createElement('script');
       // by default, <iframe> displays as inline-block
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '195',
-          width: '320',
+          height: '0',
+          width: '0',
           videoId: 'h7BTVFOAwkQ',
           playerVars: {
             'playsinline': 1
@@ -26,8 +27,10 @@ var tag = document.createElement('script');
         event.target.playVideo();
         // grab select from html then add change.eventlistener
         // when changes, grab video code, call player.loadVideoById()
-        let dropDown = document.querySelector("select")
-            dropDown.addEventListener("change", changedVideo) 
+        let selectButtons = document.querySelector("#btn-group")
+          selectButtons.addEventListener("click", changedVideo)
+            return;
+        
       }
 
       // the API calls this function when the player's state changes
@@ -35,7 +38,7 @@ var tag = document.createElement('script');
       var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 100000);
+          setTimeout(stopVideo, 1000 * 60 * 60);
           done = true;
         }
       }
@@ -45,3 +48,14 @@ var tag = document.createElement('script');
       function changedVideo(event) {
           player.loadVideoById(event.target.value)
       }
+
+      var playButton = document.getElementById("play");
+      playButton.addEventListener("click", function() {
+        player.playVideo();
+      });
+      
+      var pauseButton = document.getElementById("pause");
+      pauseButton.addEventListener("click", function() {
+        player.pauseVideo();
+      });
+      
