@@ -16,12 +16,11 @@ An interactive, relaxation delivering, cocktail finder and atmosphere app
 
 Landing page, require legal drinking age confirmation to continue:
 
-## ![gimme-a-drink - index.html](assets/images/screencapture-index-html-2021-10-10.pdf)
+![gimme-a-drink - index.html](images/screencapture-index-html-2021-10-10.pdf)
 
-\
 Main page, featuring relaxing music options and a carousel of cocktail recipes:
 
-## ![gimme-a-drink - main.html](assets/images/screencapture-main-html-2021-10-10pdf.pdf)
+![gimme-a-drink - main.html](images/screencapture-main-html-2021-10-10pdf.pdf)
 
 ## Technologies
 
@@ -39,8 +38,8 @@ Project uses:
 
 ## Development
 
-Foursite Dev Group, Full Stack Development Team:\
-Sebastian Doreste (https://github.com/Japexican)\
-Nick Hodges (https://github.com/nhodges1)\
-Brandon Perez (https://github.com/Brandon-perez19)\
+Foursite Dev Group, Full Stack Development Team: <br>
+Sebastian Doreste (https://github.com/Japexican) <br>
+Nick Hodges (https://github.com/nhodges1) <br>
+Brandon Perez (https://github.com/Brandon-perez19) <br>
 Kat Redondo (https://github.com/RU3YKat)
