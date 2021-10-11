@@ -260,20 +260,19 @@ for(var i=1; i<16; i++) {
 };
 };
 
+var add = function add(cocktails) {
+    var ul = document.getElementById("saveList");
+    var li = document.createElement("a");
+    li.classList = "collection-item";
+    li.innerHTML = "cocktails";
+    ul.appendChild(li);
+
+    localStorage.setItem("cocktails", add);
+};
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
     M.Carousel.init(elems);
 });
-
-
-var addCocktail = function add() {
-    var savedCocktails = document.getElementById("save1");
-    var img = document.createElement("img");
-    img.classList = "responsive-img";
-    img.src = cocktails.drinks[drinkNum].strDrinkThumb;
-
-    savedCocktails.appendChild(img);
-};
 
 cocktailList();

@@ -92,8 +92,7 @@
                 </h2>
                 <div class="carousel">
                     <a class="carousel-item hoverable" id="drink1" href="#one!"
-                        ><button
-                            onClick="add()"
+                        ><button onClick="add()" id="myBtn"
                             class="
                                 btn-floating
                                 halfway-fab
@@ -107,7 +106,7 @@
                         </button></a
                     >
                     <a class="carousel-item hoverable" id="drink2" href="#two!"
-                        ><button
+                        ><button onClick="add()" id="myBtn"
                             class="
                                 btn-floating
                                 halfway-fab
@@ -124,7 +123,7 @@
                         class="carousel-item hoverable"
                         id="drink3"
                         href="#three!"
-                        ><button
+                        ><button onClick="add()" id="myBtn"
                             class="
                                 btn-floating
                                 halfway-fab
@@ -138,7 +137,7 @@
                         </button></a
                     >
                     <a class="carousel-item hoverable" id="drink4" href="#four!"
-                        ><button
+                        ><button onClick="add()" id="myBtn"
                             class="
                                 btn-floating
                                 halfway-fab
@@ -152,7 +151,7 @@
                         </button></a
                     >
                     <a class="carousel-item hoverable" id="drink5" href="#five!"
-                        ><button
+                        ><button onClick="add()" id="myBtn"
                             class="
                                 btn-floating
                                 halfway-fab
@@ -166,7 +165,7 @@
                         </button></a
                     >
                     <a class="carousel-item hoverable" id="drink6" href="#six!"
-                        ><button
+                        ><button onClick="add()" id="myBtn"
                             class="
                                 btn-floating
                                 halfway-fab
@@ -183,7 +182,7 @@
                         class="carousel-item hoverable"
                         id="drink7"
                         href="#seven!"
-                        ><button
+                        ><button onClick="add()" id="myBtn"
                             class="
                                 btn-floating
                                 halfway-fab
@@ -200,7 +199,7 @@
                         class="carousel-item hoverable"
                         id="drink8"
                         href="#eight!"
-                        ><button
+                        ><button onClick="add()" id="myBtn"
                             class="
                                 btn-floating
                                 halfway-fab
@@ -214,7 +213,7 @@
                         </button></a
                     >
                     <a class="carousel-item hoverable" id="drink9" href="#nine!"
-                        ><button
+                        ><button onClick="add()" id="myBtn"
                             class="
                                 btn-floating
                                 halfway-fab
@@ -228,7 +227,7 @@
                         </button></a
                     >
                     <a class="carousel-item hoverable" id="drink10" href="#ten!"
-                        ><button
+                        ><button onClick="add()" id="myBtn"
                             class="
                                 btn-floating
                                 halfway-fab
@@ -247,19 +246,8 @@
                 <h2 class="favorie-drinks center-align white-text underline font-family">
                     Favorite Cocktails
                 </h2>
-                <div class="row">
-                    <div class="col s12 m3">
-                        <div class="card hoverable">
-                            <div class="card-image" id="save1">
-                                <a class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">delete_forever</i></a>
-                            </div>
-                            <div class="card-content">
-                                <ul class="collection" id="list1">
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="collection" id="saveList">
+                  </div>
             </section>
         </div>
 
