@@ -16,11 +16,11 @@ An interactive, relaxation delivering, cocktail finder and atmosphere app
 
 Landing page, require legal drinking age confirmation to continue:
 
-![](./assets/images/screencapture-index-html-2021-10-10.pdf)
+![](assets/images/screencapture-index-html-2021-10-10-1.png)
 
 Main page, featuring relaxing music options and a carousel of cocktail recipes:
 
-![](./assets/images/screencapture-main-html-2021-10-10pdf.pdf)
+![](assets/images/screencapture-main-html-2021-10-10pdf-1.png)
 
 ## Technologies
 
