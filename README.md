@@ -16,11 +16,11 @@ An interactive, relaxation delivering, cocktail finder and atmosphere app
 
 Landing page, require legal drinking age confirmation to continue:
 
-![gimme-a-drink - index.html](images/screencapture-index-html-2021-10-10.pdf)
+![](images/screencapture-index-html-2021-10-10.pdf)
 
 Main page, featuring relaxing music options and a carousel of cocktail recipes:
 
-![gimme-a-drink - main.html](images/screencapture-main-html-2021-10-10pdf.pdf)
+![](images/screencapture-main-html-2021-10-10pdf.pdf)
 
 ## Technologies
 
